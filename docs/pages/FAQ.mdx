@@ -1,0 +1,33 @@
+# Frequently Asked Questions
+
+## What networks does Klaster support?
+
+Klaster supports multiple EVM-compatible networks, including major chains and layer 2 solutions. For the most up-to-date list, check the `/info` endpoint of a Klaster node.
+
+## How does Klaster's chain abstraction work?
+
+Klaster allows users to execute transactions across multiple chains with a single signature. It uses a network of nodes to handle cross-chain gas payments and transaction execution.
+
+## Do users have the same address across chains with Klaster?
+
+Yes, Klaster uses deterministic address derivation to provide users with the same smart contract wallet address across all supported chains.
+
+## How much does using Klaster cost?
+
+Klaster nodes charge a fee for executing transactions, which is included in the quote provided to users. The exact cost depends on the complexity of the transaction and current gas prices.
+
+## Who holds the keys in the Klaster system?
+
+Users retain full control of their keys. Klaster never has access to user funds or private keys.
+
+## How does Klaster handle transaction signing?
+
+Users sign a single interchain transaction (iTx) hash, which represents multiple transactions across different chains. This signature authorizes the Klaster network to execute the entire bundle of transactions.
+
+## What happens if a Klaster node fails to execute a transaction?
+
+Klaster uses a slashing mechanism to penalize nodes that fail to execute committed transactions, ensuring reliability and security for users.
+
+## How does Klaster improve blockchain usability?
+
+Klaster simplifies multi-chain interactions, handles gas payments across different networks, and allows users to pay fees in various tokens, reducing complexity for end-users and developers.
